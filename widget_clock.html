@@ -86,9 +86,16 @@
             </div>
         </div>
         <script>
+            function addLeadingZeros(n) {
+                if (n <= 9) {
+                    return "0" + n;
+                }
+                return n
+            }
             function date() {
                 var today = new Date();
-                document.getElementById('date').innerHTML = today;
+                var hoje = addLeadingZeros(today.getDate()) + "-" + addLeadingZeros(today.getMonth() + 1) + "-" + today.getFullYear()
+                document.getElementById('date').innerHTML = hoje;
             }
             function clock() {
                 var today = new Date();
