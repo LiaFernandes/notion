@@ -104,7 +104,7 @@
                     weekday[5] = "Sexta";
                     weekday[6] = "Sábado";
 
-                var hoje = weekday[d.getDay()] + " " + addLeadingZeros(today.getDate()) + "-" + addLeadingZeros(today.getMonth() + 1) + "-" + today.getFullYear()
+                var hoje = weekday[today.getDay()] + " " + addLeadingZeros(today.getDate()) + "-" + addLeadingZeros(today.getMonth() + 1) + "-" + today.getFullYear()
                 document.getElementById('date').innerHTML = hoje;
             }
             function clock() {
