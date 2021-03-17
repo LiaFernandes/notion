@@ -88,7 +88,8 @@
         <script>
             function date() {
                 var today = new Date();
-                document.getElementById('date').innerHTML = dateformat(today, 'dddd, dd-mmmm-yyyy');
+                dateformat(today, 'dddd, dd-mm-yyyy');
+                document.getElementById('date').innerHTML = today;
             }
             function clock() {
                 var today = new Date();
