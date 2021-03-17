@@ -94,7 +94,8 @@
             }
             function date() {
                 var today = new Date();
-                var hoje = addLeadingZeros(today.getDate()) + "-" + addLeadingZeros(today.getMonth() + 1) + "-" + today.getFullYear()
+                var hoje = today.format('dd-mm-yyyy'); // Returns '02-8-16'
+                var hoje1 = addLeadingZeros(today.getDate()) + "-" + addLeadingZeros(today.getMonth() + 1) + "-" + today.getFullYear()
                 document.getElementById('date').innerHTML = hoje;
             }
             function clock() {
